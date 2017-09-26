@@ -8,4 +8,6 @@ Domjudge
 - Import  `domjudge.sql`
 
 ### 3. More
-- <a href="https://www.domjudge.org/documentation" target="_blank">Domjudge Documentation</a># Domjudge
+- <a href="https://www.domjudge.org/documentation" target="_blank">Domjudge Documentation</a><br>
+- # Domjudge
+# Domjudge
