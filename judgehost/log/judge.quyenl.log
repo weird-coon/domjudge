@@ -1,0 +1,930 @@
+[Jun 11 09:43:51] judgedaemon[6041]: Judge started on quyenl [DOMjudge/5.1.3]
+[Jun 11 09:43:51] judgedaemon[6041]: Installing signal handlers
+[Jun 11 09:43:51] judgedaemon[6041]: Not using cgroups. Using cgroups is highly recommended. See the manual for details.
+[Jun 11 09:43:51] judgedaemon[6041]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Jun 11 09:43:51] judgedaemon[6041]: API request POST judgehosts
+[Jun 11 09:43:51] judgedaemon[6041]: error: Error while executing curl POST to url http://localhost/domjudge/api/judgehosts: http status code: 403, response: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>403 Forbidden</title>
+</head><body>
+<h1>Forbidden</h1>
+<p>You don't have permission to access /domjudge/api/judgehosts
+on this server.</p>
+<hr>
+<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+</body></html>
+
+[Jun 11 16:07:19] judgedaemon[32118]: Judge started on quyenl [DOMjudge/5.1.3]
+[Jun 11 16:07:19] judgedaemon[32118]: Installing signal handlers
+[Jun 11 16:07:19] judgedaemon[32118]: Not using cgroups. Using cgroups is highly recommended. See the manual for details.
+[Jun 11 16:07:19] judgedaemon[32118]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Jun 11 16:07:19] judgedaemon[32118]: API request POST judgehosts
+[Jun 11 16:07:19] judgedaemon[32118]: API request POST judgings
+[Jun 11 16:07:19] judgedaemon[32118]: No submissions in queue (for endpoint default), waiting...
+[Jun 11 16:10:45] judgedaemon[32118]: Judging submission s1 (endpoint default) (t1/p1/c), id j1...
+[Jun 11 16:10:45] judgedaemon[32118]: API request GET config
+[Jun 11 16:10:45] judgedaemon[32118]: API request GET config
+[Jun 11 16:10:45] judgedaemon[32118]: API request GET config
+[Jun 11 16:10:45] judgedaemon[32118]: API request GET config
+[Jun 11 16:10:45] judgedaemon[32118]: Working directory: /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c2-s1-j1
+[Jun 11 16:10:45] judgedaemon[32118]: API request GET submission_files
+[Jun 11 16:10:45] judgedaemon[32118]: Fetching new executable 'c'
+[Jun 11 16:10:45] judgedaemon[32118]: API request GET executable
+[Jun 11 16:10:45] judgedaemon[32118]: Unzipping
+[Jun 11 16:10:45] judgedaemon[32118]: Compiling
+[Th06 11 16:10:45] compile.sh[32236]: starting '/home/quyenl/domjudge/judgehost/lib/judge/compile.sh', PID = 32236
+[Th06 11 16:10:45] compile.sh[32236]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/c/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c2-s1-j1'
+[Th06 11 16:10:45] compile.sh[32236]: source file(s): example.c
+[Th06 11 16:10:45] compile.sh[32236]: starting compile
+[Th06 11 16:10:46] compile.sh[32236]: checking compilation exit-status
+[Th06 11 16:10:46] compile.sh[32236]: Compilation successful
+[Th06 11 16:10:46] compile.sh[32236]: exiting, code = '0'
+[Jun 11 16:10:46] judgedaemon[32118]: API request PUT judgings/1
+[Jun 11 16:10:46] judgedaemon[32118]: executing chroot script: 'chroot-startstop.sh start'
+[Jun 11 16:10:47] judgedaemon[32118]: API request GET testcases
+[Jun 11 16:10:47] judgedaemon[32118]: Running testcase 1...
+[Jun 11 16:10:47] judgedaemon[32118]: API request GET testcase_files
+[Jun 11 16:10:47] judgedaemon[32118]: API request GET testcase_files
+[Jun 11 16:10:47] judgedaemon[32118]: Fetched new input,output testcase 1 for problem p1
+[Jun 11 16:10:47] judgedaemon[32118]: API request GET config
+[Jun 11 16:10:47] judgedaemon[32118]: Fetching new executable 'compare'
+[Jun 11 16:10:47] judgedaemon[32118]: API request GET executable
+[Jun 11 16:10:47] judgedaemon[32118]: Unzipping
+[Jun 11 16:10:47] judgedaemon[32118]: Compiling
+[Jun 11 16:10:49] judgedaemon[32118]: Fetching new executable 'run'
+[Jun 11 16:10:49] judgedaemon[32118]: API request GET executable
+[Jun 11 16:10:49] judgedaemon[32118]: Unzipping
+[Jun 11 16:10:49] judgedaemon[32118]: Compiling
+[Th06 11 16:10:49] testcase_run.sh[32341]: starting '/home/quyenl/domjudge/judgehost/lib/judge/testcase_run.sh', PID = 32341
+[Th06 11 16:10:49] testcase_run.sh[32341]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.b026324c6904b2a9cb4b88d6d61c81d1.in' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.59ca0efa9f5633cb0371bbc0355478d8.out' '5:6' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c2-s1-j1/testcase001'
+[Th06 11 16:10:49] testcase_run.sh[32341]: optionals: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run' ''
+[Th06 11 16:10:49] testcase_run.sh[32341]: run_juryprog: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/runjury'
+[Th06 11 16:10:49] testcase_run.sh[32341]: setting up testing (chroot) environment
+[Th06 11 16:10:49] testcase_run.sh[32341]: creating /dev/null character-special device
+[Th06 11 16:10:49] testcase_run.sh[32341]: running program (USE_CHROOT = 1)
+[Th06 11 16:10:49] testcase_run.sh[32341]: runcheck: ./run testdata.in program.out sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -r /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c2-s1-j1/testcase001/.. --nproc=64 --no-core --streamsize=4096 --user=domjudge-run --walltime=5:6 --cputime=5:6 --memsize=524288 --filesize=4096 --stderr=program.err --outmeta=program.meta -- /testcase001/execdir/program
+[Th06 11 16:10:50] testcase_run.sh[32341]: comparing output
+[Th06 11 16:10:50] testcase_run.sh[32341]: starting compare script '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run'
+[Th06 11 16:10:50] testcase_run.sh[32341]: runcheck: sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -u domjudge-run -m 2097152 -t 30 -c -f 65536 -s 65536 -M compare.meta -- /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run testdata.in testdata.out feedback/
+[Th06 11 16:10:50] testcase_run.sh[32341]: checking compare script exit-status: 43
+[Th06 11 16:10:50] testcase_run.sh[32341]: checking program run exit-status
+[Th06 11 16:10:50] testcase_run.sh[32341]: exiting with status '105'
+[Jun 11 16:10:50] judgedaemon[32118]: API request POST judging_runs
+[Jun 11 16:10:50] judgedaemon[32118]: Testcase 1 done, result: wrong-answer
+[Jun 11 16:10:50] judgedaemon[32118]: API request GET testcases
+[Jun 11 16:10:50] judgedaemon[32118]: executing chroot script: 'chroot-startstop.sh stop'
+[Jun 11 16:10:50] judgedaemon[32118]: Judging s1/j1 finished
+[Jun 11 16:10:50] judgedaemon[32118]: API request POST judgings
+[Jun 11 16:10:50] judgedaemon[32118]: No submissions in queue (for endpoint default), waiting...
+[Jun 11 16:23:14] judgedaemon[32118]: error: Error retrieving API data. API gave us: <div class="container">
+""
+[Jun 11 17:25:34] judgedaemon[1814]: Judge started on quyenl [DOMjudge/5.1.3]
+[Jun 11 17:25:34] judgedaemon[1814]: Installing signal handlers
+[Jun 11 17:25:34] judgedaemon[1814]: Not using cgroups. Using cgroups is highly recommended. See the manual for details.
+[Jun 11 17:25:34] judgedaemon[1814]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Jun 11 17:25:34] judgedaemon[1814]: API request POST judgehosts
+[Jun 11 17:25:34] judgedaemon[1814]: API request POST judgings
+[Jun 11 17:25:34] judgedaemon[1814]: Judging submission s2 (endpoint default) (t4/p1/c), id j2...
+[Jun 11 17:25:34] judgedaemon[1814]: API request GET config
+[Jun 11 17:25:34] judgedaemon[1814]: API request GET config
+[Jun 11 17:25:34] judgedaemon[1814]: API request GET config
+[Jun 11 17:25:34] judgedaemon[1814]: API request GET config
+[Jun 11 17:25:34] judgedaemon[1814]: Working directory: /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c3-s2-j2
+[Jun 11 17:25:34] judgedaemon[1814]: API request GET submission_files
+[Th06 11 17:25:34] compile.sh[1827]: starting '/home/quyenl/domjudge/judgehost/lib/judge/compile.sh', PID = 1827
+[Th06 11 17:25:34] compile.sh[1827]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/c/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c3-s2-j2'
+[Th06 11 17:25:35] compile.sh[1827]: source file(s): hello.c
+[Th06 11 17:25:35] compile.sh[1827]: starting compile
+[Th06 11 17:25:35] compile.sh[1827]: checking compilation exit-status
+[Th06 11 17:25:35] compile.sh[1827]: exiting, code = '101'
+[Jun 11 17:25:35] judgedaemon[1814]: API request PUT judgings/2
+[Jun 11 17:25:35] judgedaemon[1814]: Judging s2/j2: compile error
+[Jun 11 17:25:35] judgedaemon[1814]: API request POST judgings
+[Jun 11 17:25:35] judgedaemon[1814]: No submissions in queue (for endpoint default), waiting...
+[Jun 11 17:26:25] judgedaemon[1814]: Judging submission s3 (endpoint default) (t4/p1/c), id j3...
+[Jun 11 17:26:25] judgedaemon[1814]: API request GET config
+[Jun 11 17:26:25] judgedaemon[1814]: API request GET config
+[Jun 11 17:26:25] judgedaemon[1814]: API request GET config
+[Jun 11 17:26:25] judgedaemon[1814]: API request GET config
+[Jun 11 17:26:25] judgedaemon[1814]: Working directory: /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c3-s3-j3
+[Jun 11 17:26:25] judgedaemon[1814]: API request GET submission_files
+[Th06 11 17:26:25] compile.sh[1940]: starting '/home/quyenl/domjudge/judgehost/lib/judge/compile.sh', PID = 1940
+[Th06 11 17:26:25] compile.sh[1940]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/c/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c3-s3-j3'
+[Th06 11 17:26:25] compile.sh[1940]: source file(s): hello.c
+[Th06 11 17:26:25] compile.sh[1940]: starting compile
+[Th06 11 17:26:25] compile.sh[1940]: checking compilation exit-status
+[Th06 11 17:26:25] compile.sh[1940]: Compilation successful
+[Th06 11 17:26:25] compile.sh[1940]: exiting, code = '0'
+[Jun 11 17:26:25] judgedaemon[1814]: API request PUT judgings/3
+[Jun 11 17:26:25] judgedaemon[1814]: executing chroot script: 'chroot-startstop.sh start'
+[Jun 11 17:26:25] judgedaemon[1814]: API request GET testcases
+[Jun 11 17:26:25] judgedaemon[1814]: Running testcase 1...
+[Jun 11 17:26:25] judgedaemon[1814]: API request GET config
+[Th06 11 17:26:25] testcase_run.sh[2036]: starting '/home/quyenl/domjudge/judgehost/lib/judge/testcase_run.sh', PID = 2036
+[Th06 11 17:26:25] testcase_run.sh[2036]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.b026324c6904b2a9cb4b88d6d61c81d1.in' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.59ca0efa9f5633cb0371bbc0355478d8.out' '5:6' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c3-s3-j3/testcase001'
+[Th06 11 17:26:25] testcase_run.sh[2036]: optionals: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run' ''
+[Th06 11 17:26:25] testcase_run.sh[2036]: run_juryprog: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/runjury'
+[Th06 11 17:26:25] testcase_run.sh[2036]: setting up testing (chroot) environment
+[Th06 11 17:26:25] testcase_run.sh[2036]: creating /dev/null character-special device
+[Th06 11 17:26:25] testcase_run.sh[2036]: running program (USE_CHROOT = 1)
+[Th06 11 17:26:25] testcase_run.sh[2036]: runcheck: ./run testdata.in program.out sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -r /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c3-s3-j3/testcase001/.. --nproc=64 --no-core --streamsize=4096 --user=domjudge-run --walltime=5:6 --cputime=5:6 --memsize=524288 --filesize=4096 --stderr=program.err --outmeta=program.meta -- /testcase001/execdir/program
+[Th06 11 17:26:25] testcase_run.sh[2036]: comparing output
+[Th06 11 17:26:25] testcase_run.sh[2036]: starting compare script '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run'
+[Th06 11 17:26:25] testcase_run.sh[2036]: runcheck: sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -u domjudge-run -m 2097152 -t 30 -c -f 65536 -s 65536 -M compare.meta -- /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run testdata.in testdata.out feedback/
+[Th06 11 17:26:25] testcase_run.sh[2036]: checking compare script exit-status: 42
+[Th06 11 17:26:26] testcase_run.sh[2036]: checking program run exit-status
+[Th06 11 17:26:26] testcase_run.sh[2036]: exiting with status '0'
+[Jun 11 17:26:26] judgedaemon[1814]: API request POST judging_runs
+[Jun 11 17:26:26] judgedaemon[1814]: Testcase 1 done, result: correct
+[Jun 11 17:26:26] judgedaemon[1814]: API request GET testcases
+[Jun 11 17:26:26] judgedaemon[1814]: executing chroot script: 'chroot-startstop.sh stop'
+[Jun 11 17:26:26] judgedaemon[1814]: Judging s3/j3 finished
+[Jun 11 17:26:26] judgedaemon[1814]: API request POST judgings
+[Jun 11 17:26:26] judgedaemon[1814]: No submissions in queue (for endpoint default), waiting...
+[Jun 11 17:28:37] judgedaemon[1814]: Judging submission s4 (endpoint default) (t3/p1/c), id j4...
+[Jun 11 17:28:37] judgedaemon[1814]: API request GET config
+[Jun 11 17:28:37] judgedaemon[1814]: API request GET config
+[Jun 11 17:28:37] judgedaemon[1814]: API request GET config
+[Jun 11 17:28:37] judgedaemon[1814]: API request GET config
+[Jun 11 17:28:37] judgedaemon[1814]: Working directory: /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c3-s4-j4
+[Jun 11 17:28:37] judgedaemon[1814]: API request GET submission_files
+[Th06 11 17:28:37] compile.sh[2337]: starting '/home/quyenl/domjudge/judgehost/lib/judge/compile.sh', PID = 2337
+[Th06 11 17:28:37] compile.sh[2337]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/c/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c3-s4-j4'
+[Th06 11 17:28:37] compile.sh[2337]: source file(s): hello.c
+[Th06 11 17:28:37] compile.sh[2337]: starting compile
+[Th06 11 17:28:37] compile.sh[2337]: checking compilation exit-status
+[Th06 11 17:28:37] compile.sh[2337]: Compilation successful
+[Th06 11 17:28:37] compile.sh[2337]: exiting, code = '0'
+[Jun 11 17:28:37] judgedaemon[1814]: API request PUT judgings/4
+[Jun 11 17:28:37] judgedaemon[1814]: executing chroot script: 'chroot-startstop.sh start'
+[Jun 11 17:28:37] judgedaemon[1814]: API request GET testcases
+[Jun 11 17:28:37] judgedaemon[1814]: Running testcase 1...
+[Jun 11 17:28:37] judgedaemon[1814]: API request GET config
+[Th06 11 17:28:37] testcase_run.sh[2447]: starting '/home/quyenl/domjudge/judgehost/lib/judge/testcase_run.sh', PID = 2447
+[Th06 11 17:28:37] testcase_run.sh[2447]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.b026324c6904b2a9cb4b88d6d61c81d1.in' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.59ca0efa9f5633cb0371bbc0355478d8.out' '5:6' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c3-s4-j4/testcase001'
+[Th06 11 17:28:37] testcase_run.sh[2447]: optionals: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run' ''
+[Th06 11 17:28:37] testcase_run.sh[2447]: run_juryprog: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/runjury'
+[Th06 11 17:28:37] testcase_run.sh[2447]: setting up testing (chroot) environment
+[Th06 11 17:28:37] testcase_run.sh[2447]: creating /dev/null character-special device
+[Th06 11 17:28:37] testcase_run.sh[2447]: running program (USE_CHROOT = 1)
+[Th06 11 17:28:37] testcase_run.sh[2447]: runcheck: ./run testdata.in program.out sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -r /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c3-s4-j4/testcase001/.. --nproc=64 --no-core --streamsize=4096 --user=domjudge-run --walltime=5:6 --cputime=5:6 --memsize=524288 --filesize=4096 --stderr=program.err --outmeta=program.meta -- /testcase001/execdir/program
+[Th06 11 17:28:37] testcase_run.sh[2447]: comparing output
+[Th06 11 17:28:37] testcase_run.sh[2447]: starting compare script '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run'
+[Th06 11 17:28:38] testcase_run.sh[2447]: runcheck: sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -u domjudge-run -m 2097152 -t 30 -c -f 65536 -s 65536 -M compare.meta -- /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run testdata.in testdata.out feedback/
+[Th06 11 17:28:38] testcase_run.sh[2447]: checking compare script exit-status: 42
+[Th06 11 17:28:38] testcase_run.sh[2447]: checking program run exit-status
+[Th06 11 17:28:38] testcase_run.sh[2447]: exiting with status '0'
+[Jun 11 17:28:38] judgedaemon[1814]: API request POST judging_runs
+[Jun 11 17:28:38] judgedaemon[1814]: Testcase 1 done, result: correct
+[Jun 11 17:28:38] judgedaemon[1814]: API request GET testcases
+[Jun 11 17:28:38] judgedaemon[1814]: executing chroot script: 'chroot-startstop.sh stop'
+[Jun 11 17:28:38] judgedaemon[1814]: Judging s4/j4 finished
+[Jun 11 17:28:38] judgedaemon[1814]: API request POST judgings
+[Jun 11 17:28:38] judgedaemon[1814]: No submissions in queue (for endpoint default), waiting...
+[Jun 11 18:03:47] judgedaemon[1814]: Signal 2 received
+[Jun 11 18:03:47] judgedaemon[1814]: Received signal, exiting.
+[Jun 13 23:14:45] judgedaemon[3517]: Judge started on quyenl [DOMjudge/5.1.3]
+[Jun 13 23:14:45] judgedaemon[3517]: Installing signal handlers
+[Jun 13 23:14:45] judgedaemon[3517]: Not using cgroups. Using cgroups is highly recommended. See the manual for details.
+[Jun 13 23:14:45] judgedaemon[3517]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Jun 13 23:14:45] judgedaemon[3517]: API request POST judgehosts
+[Jun 13 23:14:45] judgedaemon[3517]: API request POST judgings
+[Jun 13 23:14:45] judgedaemon[3517]: No submissions in queue (for endpoint default), waiting...
+[Jun 14 02:01:43] judgedaemon[3517]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 500, response: 
+error: Could not connect to database server (host=localhost,user=domjudge,password=****************,db=domjudge). Error 2002: Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+
+[Jun 14 02:01:45] judgedaemon[3517]: Signal 15 received
+[Jun 14 02:01:45] judgedaemon[3517]: Received signal, exiting.
+[Jun 14 08:42:29] judgedaemon[3216]: Judge started on quyenl [DOMjudge/5.1.3]
+[Jun 14 08:42:29] judgedaemon[3216]: Installing signal handlers
+[Jun 14 08:42:29] judgedaemon[3216]: Not using cgroups. Using cgroups is highly recommended. See the manual for details.
+[Jun 14 08:42:29] judgedaemon[3216]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Jun 14 08:42:29] judgedaemon[3216]: API request POST judgehosts
+[Jun 14 08:42:29] judgedaemon[3216]: API request POST judgings
+[Jun 14 08:42:29] judgedaemon[3216]: No submissions in queue (for endpoint default), waiting...
+[Jun 14 09:39:01] judgedaemon[3216]: Judging submission s5 (endpoint default) (t4/p1/c), id j5...
+[Jun 14 09:39:01] judgedaemon[3216]: API request GET config
+[Jun 14 09:39:01] judgedaemon[3216]: API request GET config
+[Jun 14 09:39:01] judgedaemon[3216]: API request GET config
+[Jun 14 09:39:01] judgedaemon[3216]: API request GET config
+[Jun 14 09:39:01] judgedaemon[3216]: Working directory: /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c2-s5-j5
+[Jun 14 09:39:01] judgedaemon[3216]: API request GET submission_files
+[Jun 14 09:39:01] compile.sh[5198]: starting '/home/quyenl/domjudge/judgehost/lib/judge/compile.sh', PID = 5198
+[Jun 14 09:39:01] compile.sh[5198]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/c/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c2-s5-j5'
+[Jun 14 09:39:01] compile.sh[5198]: source file(s): hello.c
+[Jun 14 09:39:01] compile.sh[5198]: starting compile
+[Jun 14 09:39:03] compile.sh[5198]: checking compilation exit-status
+[Jun 14 09:39:03] compile.sh[5198]: Compilation successful
+[Jun 14 09:39:03] compile.sh[5198]: exiting, code = '0'
+[Jun 14 09:39:03] judgedaemon[3216]: API request PUT judgings/5
+[Jun 14 09:39:03] judgedaemon[3216]: executing chroot script: 'chroot-startstop.sh start'
+[Jun 14 09:39:03] judgedaemon[3216]: API request GET testcases
+[Jun 14 09:39:03] judgedaemon[3216]: Running testcase 1...
+[Jun 14 09:39:03] judgedaemon[3216]: API request GET config
+[Jun 14 09:39:03] testcase_run.sh[5289]: starting '/home/quyenl/domjudge/judgehost/lib/judge/testcase_run.sh', PID = 5289
+[Jun 14 09:39:03] testcase_run.sh[5289]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.b026324c6904b2a9cb4b88d6d61c81d1.in' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.59ca0efa9f5633cb0371bbc0355478d8.out' '5:6' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c2-s5-j5/testcase001'
+[Jun 14 09:39:03] testcase_run.sh[5289]: optionals: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run' ''
+[Jun 14 09:39:03] testcase_run.sh[5289]: run_juryprog: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/runjury'
+[Jun 14 09:39:03] testcase_run.sh[5289]: setting up testing (chroot) environment
+[Jun 14 09:39:03] testcase_run.sh[5289]: creating /dev/null character-special device
+[Jun 14 09:39:03] testcase_run.sh[5289]: running program (USE_CHROOT = 1)
+[Jun 14 09:39:03] testcase_run.sh[5289]: runcheck: ./run testdata.in program.out sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -r /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c2-s5-j5/testcase001/.. --nproc=64 --no-core --streamsize=4096 --user=domjudge-run --walltime=5:6 --cputime=5:6 --memsize=524288 --filesize=4096 --stderr=program.err --outmeta=program.meta -- /testcase001/execdir/program
+[Jun 14 09:39:03] testcase_run.sh[5289]: comparing output
+[Jun 14 09:39:03] testcase_run.sh[5289]: starting compare script '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run'
+[Jun 14 09:39:03] testcase_run.sh[5289]: runcheck: sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -u domjudge-run -m 2097152 -t 30 -c -f 65536 -s 65536 -M compare.meta -- /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run testdata.in testdata.out feedback/
+[Jun 14 09:39:03] testcase_run.sh[5289]: checking compare script exit-status: 42
+[Jun 14 09:39:03] testcase_run.sh[5289]: checking program run exit-status
+[Jun 14 09:39:03] testcase_run.sh[5289]: exiting with status '0'
+[Jun 14 09:39:03] judgedaemon[3216]: API request POST judging_runs
+[Jun 14 09:39:03] judgedaemon[3216]: Testcase 1 done, result: correct
+[Jun 14 09:39:03] judgedaemon[3216]: API request GET testcases
+[Jun 14 09:39:03] judgedaemon[3216]: executing chroot script: 'chroot-startstop.sh stop'
+[Jun 14 09:39:04] judgedaemon[3216]: Judging s5/j5 finished
+[Jun 14 09:39:04] judgedaemon[3216]: API request POST judgings
+[Jun 14 09:39:04] judgedaemon[3216]: No submissions in queue (for endpoint default), waiting...
+[Jun 14 09:47:42] judgedaemon[3216]: Judging submission s6 (endpoint default) (t4/p1/c), id j6...
+[Jun 14 09:47:42] judgedaemon[3216]: API request GET config
+[Jun 14 09:47:42] judgedaemon[3216]: API request GET config
+[Jun 14 09:47:42] judgedaemon[3216]: API request GET config
+[Jun 14 09:47:42] judgedaemon[3216]: API request GET config
+[Jun 14 09:47:42] judgedaemon[3216]: Working directory: /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c5-s6-j6
+[Jun 14 09:47:42] judgedaemon[3216]: API request GET submission_files
+[Jun 14 09:47:42] compile.sh[5622]: starting '/home/quyenl/domjudge/judgehost/lib/judge/compile.sh', PID = 5622
+[Jun 14 09:47:42] compile.sh[5622]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/c/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c5-s6-j6'
+[Jun 14 09:47:42] compile.sh[5622]: source file(s): hello.c
+[Jun 14 09:47:42] compile.sh[5622]: starting compile
+[Jun 14 09:47:42] compile.sh[5622]: checking compilation exit-status
+[Jun 14 09:47:42] compile.sh[5622]: Compilation successful
+[Jun 14 09:47:42] compile.sh[5622]: exiting, code = '0'
+[Jun 14 09:47:42] judgedaemon[3216]: API request PUT judgings/6
+[Jun 14 09:47:42] judgedaemon[3216]: executing chroot script: 'chroot-startstop.sh start'
+[Jun 14 09:47:42] judgedaemon[3216]: API request GET testcases
+[Jun 14 09:47:42] judgedaemon[3216]: Running testcase 1...
+[Jun 14 09:47:42] judgedaemon[3216]: API request GET config
+[Jun 14 09:47:42] testcase_run.sh[5697]: starting '/home/quyenl/domjudge/judgehost/lib/judge/testcase_run.sh', PID = 5697
+[Jun 14 09:47:42] testcase_run.sh[5697]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.b026324c6904b2a9cb4b88d6d61c81d1.in' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.59ca0efa9f5633cb0371bbc0355478d8.out' '5:6' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c5-s6-j6/testcase001'
+[Jun 14 09:47:42] testcase_run.sh[5697]: optionals: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run' ''
+[Jun 14 09:47:42] testcase_run.sh[5697]: run_juryprog: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/runjury'
+[Jun 14 09:47:42] testcase_run.sh[5697]: setting up testing (chroot) environment
+[Jun 14 09:47:42] testcase_run.sh[5697]: creating /dev/null character-special device
+[Jun 14 09:47:42] testcase_run.sh[5697]: running program (USE_CHROOT = 1)
+[Jun 14 09:47:42] testcase_run.sh[5697]: runcheck: ./run testdata.in program.out sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -r /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c5-s6-j6/testcase001/.. --nproc=64 --no-core --streamsize=4096 --user=domjudge-run --walltime=5:6 --cputime=5:6 --memsize=524288 --filesize=4096 --stderr=program.err --outmeta=program.meta -- /testcase001/execdir/program
+[Jun 14 09:47:42] testcase_run.sh[5697]: comparing output
+[Jun 14 09:47:42] testcase_run.sh[5697]: starting compare script '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run'
+[Jun 14 09:47:42] testcase_run.sh[5697]: runcheck: sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -u domjudge-run -m 2097152 -t 30 -c -f 65536 -s 65536 -M compare.meta -- /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run testdata.in testdata.out feedback/
+[Jun 14 09:47:42] testcase_run.sh[5697]: checking compare script exit-status: 42
+[Jun 14 09:47:42] testcase_run.sh[5697]: checking program run exit-status
+[Jun 14 09:47:42] testcase_run.sh[5697]: exiting with status '0'
+[Jun 14 09:47:42] judgedaemon[3216]: API request POST judging_runs
+[Jun 14 09:47:42] judgedaemon[3216]: Testcase 1 done, result: correct
+[Jun 14 09:47:42] judgedaemon[3216]: API request GET testcases
+[Jun 14 09:47:42] judgedaemon[3216]: executing chroot script: 'chroot-startstop.sh stop'
+[Jun 14 09:47:43] judgedaemon[3216]: Judging s6/j6 finished
+[Jun 14 09:47:43] judgedaemon[3216]: API request POST judgings
+[Jun 14 09:47:43] judgedaemon[3216]: No submissions in queue (for endpoint default), waiting...
+[Jun 14 13:02:40] judgedaemon[3216]: Signal 1 received
+[Jun 14 13:02:40] judgedaemon[3216]: Received signal, exiting.
+[Jun 15 16:11:55] judgedaemon[3311]: Judge started on quyenl [DOMjudge/5.1.3]
+[Jun 15 16:11:55] judgedaemon[3311]: Installing signal handlers
+[Jun 15 16:11:55] judgedaemon[3311]: Not using cgroups. Using cgroups is highly recommended. See the manual for details.
+[Jun 15 16:11:55] judgedaemon[3311]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Jun 15 16:11:55] judgedaemon[3311]: API request POST judgehosts
+[Jun 15 16:11:55] judgedaemon[3311]: API request POST judgings
+[Jun 15 16:11:55] judgedaemon[3311]: No submissions in queue (for endpoint default), waiting...
+[Jun 15 16:14:26] judgedaemon[3311]: Judging submission s7 (endpoint default) (t1/p1/c), id j7...
+[Jun 15 16:14:26] judgedaemon[3311]: API request GET config
+[Jun 15 16:14:26] judgedaemon[3311]: API request GET config
+[Jun 15 16:14:26] judgedaemon[3311]: API request GET config
+[Jun 15 16:14:26] judgedaemon[3311]: API request GET config
+[Jun 15 16:14:26] judgedaemon[3311]: Working directory: /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c5-s7-j7
+[Jun 15 16:14:26] judgedaemon[3311]: API request GET submission_files
+[Jun 15 16:14:26] compile.sh[3469]: starting '/home/quyenl/domjudge/judgehost/lib/judge/compile.sh', PID = 3469
+[Jun 15 16:14:26] compile.sh[3469]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/c/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c5-s7-j7'
+[Jun 15 16:14:26] compile.sh[3469]: source file(s): hello.c
+[Jun 15 16:14:26] compile.sh[3469]: starting compile
+[Jun 15 16:14:28] compile.sh[3469]: checking compilation exit-status
+[Jun 15 16:14:28] compile.sh[3469]: Compilation successful
+[Jun 15 16:14:28] compile.sh[3469]: exiting, code = '0'
+[Jun 15 16:14:28] judgedaemon[3311]: API request PUT judgings/7
+[Jun 15 16:14:28] judgedaemon[3311]: executing chroot script: 'chroot-startstop.sh start'
+[Jun 15 16:14:28] judgedaemon[3311]: API request GET testcases
+[Jun 15 16:14:28] judgedaemon[3311]: Running testcase 1...
+[Jun 15 16:14:28] judgedaemon[3311]: API request GET config
+[Jun 15 16:14:28] testcase_run.sh[3544]: starting '/home/quyenl/domjudge/judgehost/lib/judge/testcase_run.sh', PID = 3544
+[Jun 15 16:14:28] testcase_run.sh[3544]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.b026324c6904b2a9cb4b88d6d61c81d1.in' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.59ca0efa9f5633cb0371bbc0355478d8.out' '5:6' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c5-s7-j7/testcase001'
+[Jun 15 16:14:28] testcase_run.sh[3544]: optionals: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run' ''
+[Jun 15 16:14:28] testcase_run.sh[3544]: run_juryprog: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/runjury'
+[Jun 15 16:14:28] testcase_run.sh[3544]: setting up testing (chroot) environment
+[Jun 15 16:14:28] testcase_run.sh[3544]: creating /dev/null character-special device
+[Jun 15 16:14:28] testcase_run.sh[3544]: running program (USE_CHROOT = 1)
+[Jun 15 16:14:28] testcase_run.sh[3544]: runcheck: ./run testdata.in program.out sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -r /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c5-s7-j7/testcase001/.. --nproc=64 --no-core --streamsize=4096 --user=domjudge-run --walltime=5:6 --cputime=5:6 --memsize=524288 --filesize=4096 --stderr=program.err --outmeta=program.meta -- /testcase001/execdir/program
+[Jun 15 16:14:28] testcase_run.sh[3544]: comparing output
+[Jun 15 16:14:28] testcase_run.sh[3544]: starting compare script '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run'
+[Jun 15 16:14:29] testcase_run.sh[3544]: runcheck: sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -u domjudge-run -m 2097152 -t 30 -c -f 65536 -s 65536 -M compare.meta -- /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run testdata.in testdata.out feedback/
+[Jun 15 16:14:29] testcase_run.sh[3544]: checking compare script exit-status: 42
+[Jun 15 16:14:29] testcase_run.sh[3544]: checking program run exit-status
+[Jun 15 16:14:29] testcase_run.sh[3544]: exiting with status '0'
+[Jun 15 16:14:29] judgedaemon[3311]: API request POST judging_runs
+[Jun 15 16:14:29] judgedaemon[3311]: Testcase 1 done, result: correct
+[Jun 15 16:14:29] judgedaemon[3311]: API request GET testcases
+[Jun 15 16:14:29] judgedaemon[3311]: executing chroot script: 'chroot-startstop.sh stop'
+[Jun 15 16:14:29] judgedaemon[3311]: Judging s7/j7 finished
+[Jun 15 16:14:29] judgedaemon[3311]: API request POST judgings
+[Jun 15 16:14:29] judgedaemon[3311]: No submissions in queue (for endpoint default), waiting...
+[Jun 15 17:09:27] judgedaemon[3311]: Signal 1 received
+[Jun 15 17:09:27] judgedaemon[3311]: Received signal, exiting.
+[Jun 17 10:14:53] judgedaemon[5645]: Judge started on quyenl [DOMjudge/5.1.3]
+[Jun 17 10:14:53] judgedaemon[5645]: Installing signal handlers
+[Jun 17 10:14:53] judgedaemon[5645]: Not using cgroups. Using cgroups is highly recommended. See the manual for details.
+[Jun 17 10:14:53] judgedaemon[5645]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Jun 17 10:14:53] judgedaemon[5645]: API request POST judgehosts
+[Jun 17 10:14:53] judgedaemon[5645]: API request POST judgings
+[Jun 17 10:14:53] judgedaemon[5645]: No submissions in queue (for endpoint default), waiting...
+[Jun 17 11:39:35] judgedaemon[5645]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 500, response: 
+error: Could not connect to database server (host=localhost,user=domjudge,password=****************,db=domjudge). Error 2002: Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+
+[Jun 17 11:39:40] judgedaemon[5645]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 500, response: 
+error: Could not connect to database server (host=localhost,user=domjudge,password=****************,db=domjudge). Error 2002: Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+
+[Jun 17 11:39:45] judgedaemon[5645]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 500, response: 
+error: Could not connect to database server (host=localhost,user=domjudge,password=****************,db=domjudge). Error 2002: Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+
+[Jun 17 11:39:50] judgedaemon[5645]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 500, response: 
+error: Could not connect to database server (host=localhost,user=domjudge,password=****************,db=domjudge). Error 2002: Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+
+[Jun 17 11:39:55] judgedaemon[5645]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 500, response: 
+error: Could not connect to database server (host=localhost,user=domjudge,password=****************,db=domjudge). Error 2002: Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+
+[Jun 17 11:40:00] judgedaemon[5645]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 500, response: 
+error: Could not connect to database server (host=localhost,user=domjudge,password=****************,db=domjudge). Error 2002: Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+
+[Jun 17 11:40:05] judgedaemon[5645]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 500, response: 
+error: Could not connect to database server (host=localhost,user=domjudge,password=****************,db=domjudge). Error 2002: Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+
+[Jun 17 11:40:10] judgedaemon[5645]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 500, response: 
+error: Could not connect to database server (host=localhost,user=domjudge,password=****************,db=domjudge). Error 2002: Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+
+[Jun 17 11:40:15] judgedaemon[5645]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: Failed to connect to localhost port 80: Connection refused
+[Jun 17 11:40:19] judgedaemon[5645]: Signal 15 received
+[Jun 17 11:40:19] judgedaemon[5645]: Received signal, exiting.
+[Jun 17 12:18:51] judgedaemon[4105]: Judge started on quyenl [DOMjudge/5.1.3]
+[Jun 17 12:18:51] judgedaemon[4105]: Installing signal handlers
+[Jun 17 12:18:51] judgedaemon[4105]: Not using cgroups. Using cgroups is highly recommended. See the manual for details.
+[Jun 17 12:18:51] judgedaemon[4105]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Jun 17 12:18:51] judgedaemon[4105]: API request POST judgehosts
+[Jun 17 12:18:51] judgedaemon[4105]: API request POST judgings
+[Jun 17 12:18:51] judgedaemon[4105]: No submissions in queue (for endpoint default), waiting...
+[Jun 17 13:25:42] judgedaemon[4105]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 500, response: 
+error: Could not connect to database server (host=localhost,user=domjudge,password=****************,db=domjudge). Error 2002: Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+
+[Jun 17 13:25:42] judgedaemon[4105]: Signal 1 received
+[Jun 17 13:25:42] judgedaemon[4105]: Received signal, exiting.
+[Jun 17 18:51:02] judgedaemon[4595]: Judge started on quyenl [DOMjudge/5.1.3]
+[Jun 17 18:51:02] judgedaemon[4595]: Installing signal handlers
+[Jun 17 18:51:02] judgedaemon[4595]: Not using cgroups. Using cgroups is highly recommended. See the manual for details.
+[Jun 17 18:51:02] judgedaemon[4595]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Jun 17 18:51:02] judgedaemon[4595]: API request POST judgehosts
+[Jun 17 18:51:02] judgedaemon[4595]: API request POST judgings
+[Jun 17 18:51:02] judgedaemon[4595]: No submissions in queue (for endpoint default), waiting...
+[Jun 17 19:35:28] judgedaemon[4595]: Signal 2 received
+[Jun 17 19:35:28] judgedaemon[4595]: Received signal, exiting.
+[Jun 17 23:17:34] judgedaemon[3012]: Judge started on quyenl [DOMjudge/5.1.3]
+[Jun 17 23:17:34] judgedaemon[3012]: Installing signal handlers
+[Jun 17 23:17:34] judgedaemon[3012]: Not using cgroups. Using cgroups is highly recommended. See the manual for details.
+[Jun 17 23:17:34] judgedaemon[3012]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Jun 17 23:17:34] judgedaemon[3012]: API request POST judgehosts
+[Jun 17 23:17:34] judgedaemon[3012]: API request POST judgings
+[Jun 17 23:17:34] judgedaemon[3012]: Judging submission s8 (endpoint default) (t3/p1/cpp), id j8...
+[Jun 17 23:17:34] judgedaemon[3012]: API request GET config
+[Jun 17 23:17:34] judgedaemon[3012]: API request GET config
+[Jun 17 23:17:34] judgedaemon[3012]: API request GET config
+[Jun 17 23:17:34] judgedaemon[3012]: API request GET config
+[Jun 17 23:17:34] judgedaemon[3012]: Working directory: /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c5-s8-j8
+[Jun 17 23:17:34] judgedaemon[3012]: API request GET submission_files
+[Jun 17 23:17:34] judgedaemon[3012]: Fetching new executable 'cpp'
+[Jun 17 23:17:34] judgedaemon[3012]: API request GET executable
+[Jun 17 23:17:35] judgedaemon[3012]: Unzipping
+[Jun 17 23:17:35] judgedaemon[3012]: Compiling
+[Jun 17 23:17:35] compile.sh[3033]: starting '/home/quyenl/domjudge/judgehost/lib/judge/compile.sh', PID = 3033
+[Jun 17 23:17:35] compile.sh[3033]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/cpp/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c5-s8-j8'
+[Jun 17 23:17:35] compile.sh[3033]: source file(s): hello.c
+[Jun 17 23:17:35] compile.sh[3033]: starting compile
+[Jun 17 23:17:36] compile.sh[3033]: checking compilation exit-status
+[Jun 17 23:17:36] compile.sh[3033]: Compilation successful
+[Jun 17 23:17:36] compile.sh[3033]: exiting, code = '0'
+[Jun 17 23:17:36] judgedaemon[3012]: API request PUT judgings/8
+[Jun 17 23:17:36] judgedaemon[3012]: executing chroot script: 'chroot-startstop.sh start'
+[Jun 17 23:17:37] judgedaemon[3012]: API request GET testcases
+[Jun 17 23:17:37] judgedaemon[3012]: Running testcase 1...
+[Jun 17 23:17:37] judgedaemon[3012]: API request GET config
+[Jun 17 23:17:37] testcase_run.sh[3108]: starting '/home/quyenl/domjudge/judgehost/lib/judge/testcase_run.sh', PID = 3108
+[Jun 17 23:17:37] testcase_run.sh[3108]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.b026324c6904b2a9cb4b88d6d61c81d1.in' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.59ca0efa9f5633cb0371bbc0355478d8.out' '5:6' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c5-s8-j8/testcase001'
+[Jun 17 23:17:37] testcase_run.sh[3108]: optionals: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run' ''
+[Jun 17 23:17:37] testcase_run.sh[3108]: run_juryprog: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/runjury'
+[Jun 17 23:17:37] testcase_run.sh[3108]: setting up testing (chroot) environment
+[Jun 17 23:17:37] testcase_run.sh[3108]: creating /dev/null character-special device
+[Jun 17 23:17:37] testcase_run.sh[3108]: running program (USE_CHROOT = 1)
+[Jun 17 23:17:37] testcase_run.sh[3108]: runcheck: ./run testdata.in program.out sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -r /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c5-s8-j8/testcase001/.. --nproc=64 --no-core --streamsize=4096 --user=domjudge-run --walltime=5:6 --cputime=5:6 --memsize=524288 --filesize=4096 --stderr=program.err --outmeta=program.meta -- /testcase001/execdir/program
+[Jun 17 23:17:37] testcase_run.sh[3108]: comparing output
+[Jun 17 23:17:37] testcase_run.sh[3108]: starting compare script '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run'
+[Jun 17 23:17:37] testcase_run.sh[3108]: runcheck: sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -u domjudge-run -m 2097152 -t 30 -c -f 65536 -s 65536 -M compare.meta -- /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run testdata.in testdata.out feedback/
+[Jun 17 23:17:37] testcase_run.sh[3108]: checking compare script exit-status: 42
+[Jun 17 23:17:37] testcase_run.sh[3108]: checking program run exit-status
+[Jun 17 23:17:37] testcase_run.sh[3108]: exiting with status '0'
+[Jun 17 23:17:37] judgedaemon[3012]: API request POST judging_runs
+[Jun 17 23:17:37] judgedaemon[3012]: Testcase 1 done, result: correct
+[Jun 17 23:17:37] judgedaemon[3012]: API request GET testcases
+[Jun 17 23:17:37] judgedaemon[3012]: executing chroot script: 'chroot-startstop.sh stop'
+[Jun 17 23:17:37] judgedaemon[3012]: Judging s8/j8 finished
+[Jun 17 23:17:37] judgedaemon[3012]: API request POST judgings
+[Jun 17 23:17:37] judgedaemon[3012]: No submissions in queue (for endpoint default), waiting...
+[Jun 17 23:29:36] judgedaemon[3012]: Judging submission s9 (endpoint default) (t3/p1/cpp), id j9...
+[Jun 17 23:29:36] judgedaemon[3012]: API request GET config
+[Jun 17 23:29:36] judgedaemon[3012]: API request GET config
+[Jun 17 23:29:36] judgedaemon[3012]: API request GET config
+[Jun 17 23:29:36] judgedaemon[3012]: API request GET config
+[Jun 17 23:29:36] judgedaemon[3012]: Working directory: /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c5-s9-j9
+[Jun 17 23:29:36] judgedaemon[3012]: API request GET submission_files
+[Jun 17 23:29:36] compile.sh[3400]: starting '/home/quyenl/domjudge/judgehost/lib/judge/compile.sh', PID = 3400
+[Jun 17 23:29:36] compile.sh[3400]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/cpp/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c5-s9-j9'
+[Jun 17 23:29:36] compile.sh[3400]: source file(s): hello.c
+[Jun 17 23:29:36] compile.sh[3400]: starting compile
+[Jun 17 23:29:36] compile.sh[3400]: checking compilation exit-status
+[Jun 17 23:29:36] compile.sh[3400]: Compilation successful
+[Jun 17 23:29:36] compile.sh[3400]: exiting, code = '0'
+[Jun 17 23:29:36] judgedaemon[3012]: API request PUT judgings/9
+[Jun 17 23:29:36] judgedaemon[3012]: executing chroot script: 'chroot-startstop.sh start'
+[Jun 17 23:29:37] judgedaemon[3012]: API request GET testcases
+[Jun 17 23:29:37] judgedaemon[3012]: Running testcase 1...
+[Jun 17 23:29:37] judgedaemon[3012]: API request GET config
+[Jun 17 23:29:37] testcase_run.sh[3475]: starting '/home/quyenl/domjudge/judgehost/lib/judge/testcase_run.sh', PID = 3475
+[Jun 17 23:29:37] testcase_run.sh[3475]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.b026324c6904b2a9cb4b88d6d61c81d1.in' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.59ca0efa9f5633cb0371bbc0355478d8.out' '5:6' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c5-s9-j9/testcase001'
+[Jun 17 23:29:37] testcase_run.sh[3475]: optionals: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run' ''
+[Jun 17 23:29:37] testcase_run.sh[3475]: run_juryprog: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/runjury'
+[Jun 17 23:29:37] testcase_run.sh[3475]: setting up testing (chroot) environment
+[Jun 17 23:29:37] testcase_run.sh[3475]: creating /dev/null character-special device
+[Jun 17 23:29:37] testcase_run.sh[3475]: running program (USE_CHROOT = 1)
+[Jun 17 23:29:37] testcase_run.sh[3475]: runcheck: ./run testdata.in program.out sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -r /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c5-s9-j9/testcase001/.. --nproc=64 --no-core --streamsize=4096 --user=domjudge-run --walltime=5:6 --cputime=5:6 --memsize=524288 --filesize=4096 --stderr=program.err --outmeta=program.meta -- /testcase001/execdir/program
+[Jun 17 23:29:37] testcase_run.sh[3475]: comparing output
+[Jun 17 23:29:37] testcase_run.sh[3475]: starting compare script '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run'
+[Jun 17 23:29:37] testcase_run.sh[3475]: runcheck: sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -u domjudge-run -m 2097152 -t 30 -c -f 65536 -s 65536 -M compare.meta -- /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run testdata.in testdata.out feedback/
+[Jun 17 23:29:37] testcase_run.sh[3475]: checking compare script exit-status: 42
+[Jun 17 23:29:37] testcase_run.sh[3475]: checking program run exit-status
+[Jun 17 23:29:37] testcase_run.sh[3475]: exiting with status '0'
+[Jun 17 23:29:37] judgedaemon[3012]: API request POST judging_runs
+[Jun 17 23:29:37] judgedaemon[3012]: Testcase 1 done, result: correct
+[Jun 17 23:29:37] judgedaemon[3012]: API request GET testcases
+[Jun 17 23:29:37] judgedaemon[3012]: executing chroot script: 'chroot-startstop.sh stop'
+[Jun 17 23:29:37] judgedaemon[3012]: Judging s9/j9 finished
+[Jun 17 23:29:37] judgedaemon[3012]: API request POST judgings
+[Jun 17 23:29:37] judgedaemon[3012]: No submissions in queue (for endpoint default), waiting...
+[Jun 17 23:30:42] judgedaemon[3012]: Judging submission s10 (endpoint default) (t3/p1/cpp), id j10...
+[Jun 17 23:30:42] judgedaemon[3012]: API request GET config
+[Jun 17 23:30:42] judgedaemon[3012]: API request GET config
+[Jun 17 23:30:42] judgedaemon[3012]: API request GET config
+[Jun 17 23:30:42] judgedaemon[3012]: API request GET config
+[Jun 17 23:30:42] judgedaemon[3012]: Working directory: /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s10-j10
+[Jun 17 23:30:42] judgedaemon[3012]: API request GET submission_files
+[Jun 17 23:30:42] compile.sh[3636]: starting '/home/quyenl/domjudge/judgehost/lib/judge/compile.sh', PID = 3636
+[Jun 17 23:30:42] compile.sh[3636]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/cpp/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s10-j10'
+[Jun 17 23:30:42] compile.sh[3636]: source file(s): hello.c
+[Jun 17 23:30:42] compile.sh[3636]: starting compile
+[Jun 17 23:30:43] compile.sh[3636]: checking compilation exit-status
+[Jun 17 23:30:43] compile.sh[3636]: Compilation successful
+[Jun 17 23:30:43] compile.sh[3636]: exiting, code = '0'
+[Jun 17 23:30:43] judgedaemon[3012]: API request PUT judgings/10
+[Jun 17 23:30:43] judgedaemon[3012]: executing chroot script: 'chroot-startstop.sh start'
+[Jun 17 23:30:43] judgedaemon[3012]: API request GET testcases
+[Jun 17 23:30:43] judgedaemon[3012]: Running testcase 1...
+[Jun 17 23:30:43] judgedaemon[3012]: API request GET config
+[Jun 17 23:30:43] testcase_run.sh[3711]: starting '/home/quyenl/domjudge/judgehost/lib/judge/testcase_run.sh', PID = 3711
+[Jun 17 23:30:43] testcase_run.sh[3711]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.b026324c6904b2a9cb4b88d6d61c81d1.in' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.59ca0efa9f5633cb0371bbc0355478d8.out' '5:6' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s10-j10/testcase001'
+[Jun 17 23:30:43] testcase_run.sh[3711]: optionals: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run' ''
+[Jun 17 23:30:43] testcase_run.sh[3711]: run_juryprog: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/runjury'
+[Jun 17 23:30:43] testcase_run.sh[3711]: setting up testing (chroot) environment
+[Jun 17 23:30:43] testcase_run.sh[3711]: creating /dev/null character-special device
+[Jun 17 23:30:43] testcase_run.sh[3711]: running program (USE_CHROOT = 1)
+[Jun 17 23:30:43] testcase_run.sh[3711]: runcheck: ./run testdata.in program.out sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -r /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s10-j10/testcase001/.. --nproc=64 --no-core --streamsize=4096 --user=domjudge-run --walltime=5:6 --cputime=5:6 --memsize=524288 --filesize=4096 --stderr=program.err --outmeta=program.meta -- /testcase001/execdir/program
+[Jun 17 23:30:43] testcase_run.sh[3711]: comparing output
+[Jun 17 23:30:43] testcase_run.sh[3711]: starting compare script '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run'
+[Jun 17 23:30:43] testcase_run.sh[3711]: runcheck: sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -u domjudge-run -m 2097152 -t 30 -c -f 65536 -s 65536 -M compare.meta -- /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run testdata.in testdata.out feedback/
+[Jun 17 23:30:43] testcase_run.sh[3711]: checking compare script exit-status: 42
+[Jun 17 23:30:43] testcase_run.sh[3711]: checking program run exit-status
+[Jun 17 23:30:43] testcase_run.sh[3711]: exiting with status '0'
+[Jun 17 23:30:43] judgedaemon[3012]: API request POST judging_runs
+[Jun 17 23:30:43] judgedaemon[3012]: Testcase 1 done, result: correct
+[Jun 17 23:30:43] judgedaemon[3012]: API request GET testcases
+[Jun 17 23:30:43] judgedaemon[3012]: executing chroot script: 'chroot-startstop.sh stop'
+[Jun 17 23:30:43] judgedaemon[3012]: Judging s10/j10 finished
+[Jun 17 23:30:43] judgedaemon[3012]: API request POST judgings
+[Jun 17 23:30:43] judgedaemon[3012]: No submissions in queue (for endpoint default), waiting...
+[Jun 17 23:38:01] judgedaemon[3012]: Judging submission s11 (endpoint default) (t3/p2/c), id j11...
+[Jun 17 23:38:01] judgedaemon[3012]: API request GET config
+[Jun 17 23:38:01] judgedaemon[3012]: API request GET config
+[Jun 17 23:38:01] judgedaemon[3012]: API request GET config
+[Jun 17 23:38:01] judgedaemon[3012]: API request GET config
+[Jun 17 23:38:01] judgedaemon[3012]: Working directory: /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s11-j11
+[Jun 17 23:38:01] judgedaemon[3012]: API request GET submission_files
+[Jun 17 23:38:01] compile.sh[4216]: starting '/home/quyenl/domjudge/judgehost/lib/judge/compile.sh', PID = 4216
+[Jun 17 23:38:01] compile.sh[4216]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/c/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s11-j11'
+[Jun 17 23:38:01] compile.sh[4216]: source file(s): example.c
+[Jun 17 23:38:01] compile.sh[4216]: starting compile
+[Jun 17 23:38:02] compile.sh[4216]: checking compilation exit-status
+[Jun 17 23:38:02] compile.sh[4216]: Compilation successful
+[Jun 17 23:38:02] compile.sh[4216]: exiting, code = '0'
+[Jun 17 23:38:02] judgedaemon[3012]: API request PUT judgings/11
+[Jun 17 23:38:02] judgedaemon[3012]: executing chroot script: 'chroot-startstop.sh start'
+[Jun 17 23:38:02] judgedaemon[3012]: API request GET testcases
+[Jun 17 23:38:02] judgedaemon[3012]: Running testcase 1...
+[Jun 17 23:38:02] judgedaemon[3012]: API request GET testcase_files
+[Jun 17 23:38:02] judgedaemon[3012]: API request GET testcase_files
+[Jun 17 23:38:02] judgedaemon[3012]: Fetched new input,output testcase 1 for problem p2
+[Jun 17 23:38:02] judgedaemon[3012]: API request GET config
+[Jun 17 23:38:02] testcase_run.sh[4292]: starting '/home/quyenl/domjudge/judgehost/lib/judge/testcase_run.sh', PID = 4292
+[Jun 17 23:38:02] testcase_run.sh[4292]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.2.1.9b05c566cf4d373cd23ffe75787c1f6d.in' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.2.1.0b93bf53346750cc7e04c02f31443721.out' '5:6' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s11-j11/testcase001'
+[Jun 17 23:38:02] testcase_run.sh[4292]: optionals: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run' 'float_tolerance 1E-6'
+[Jun 17 23:38:02] testcase_run.sh[4292]: run_juryprog: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/runjury'
+[Jun 17 23:38:02] testcase_run.sh[4292]: setting up testing (chroot) environment
+[Jun 17 23:38:02] testcase_run.sh[4292]: creating /dev/null character-special device
+[Jun 17 23:38:02] testcase_run.sh[4292]: running program (USE_CHROOT = 1)
+[Jun 17 23:38:02] testcase_run.sh[4292]: runcheck: ./run testdata.in program.out sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -r /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s11-j11/testcase001/.. --nproc=64 --no-core --streamsize=4096 --user=domjudge-run --walltime=5:6 --cputime=5:6 --memsize=524288 --filesize=4096 --stderr=program.err --outmeta=program.meta -- /testcase001/execdir/program
+[Jun 17 23:38:02] testcase_run.sh[4292]: comparing output
+[Jun 17 23:38:02] testcase_run.sh[4292]: starting compare script '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run'
+[Jun 17 23:38:02] testcase_run.sh[4292]: runcheck: sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -u domjudge-run -m 2097152 -t 30 -c -f 65536 -s 65536 -M compare.meta -- /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run testdata.in testdata.out feedback/ float_tolerance 1E-6
+[Jun 17 23:38:02] testcase_run.sh[4292]: checking compare script exit-status: 43
+[Jun 17 23:38:02] testcase_run.sh[4292]: checking program run exit-status
+[Jun 17 23:38:02] testcase_run.sh[4292]: exiting with status '105'
+[Jun 17 23:38:02] judgedaemon[3012]: API request POST judging_runs
+[Jun 17 23:38:02] judgedaemon[3012]: Testcase 1 done, result: wrong-answer
+[Jun 17 23:38:02] judgedaemon[3012]: API request GET testcases
+[Jun 17 23:38:02] judgedaemon[3012]: Running testcase 2...
+[Jun 17 23:38:02] judgedaemon[3012]: API request GET testcase_files
+[Jun 17 23:38:02] judgedaemon[3012]: API request GET testcase_files
+[Jun 17 23:38:02] judgedaemon[3012]: Fetched new input,output testcase 2 for problem p2
+[Jun 17 23:38:02] judgedaemon[3012]: API request GET config
+[Jun 17 23:38:02] testcase_run.sh[4399]: starting '/home/quyenl/domjudge/judgehost/lib/judge/testcase_run.sh', PID = 4399
+[Jun 17 23:38:02] testcase_run.sh[4399]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.2.2.a94c7fc1f4dac435f6fc5d5d4c7ba173.in' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.2.2.2c266fa701a6034e02d928331d5bd4ef.out' '5:6' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s11-j11/testcase002'
+[Jun 17 23:38:02] testcase_run.sh[4399]: optionals: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run' 'float_tolerance 1E-6'
+[Jun 17 23:38:02] testcase_run.sh[4399]: run_juryprog: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/runjury'
+[Jun 17 23:38:02] testcase_run.sh[4399]: setting up testing (chroot) environment
+[Jun 17 23:38:02] testcase_run.sh[4399]: creating /dev/null character-special device
+[Jun 17 23:38:02] testcase_run.sh[4399]: running program (USE_CHROOT = 1)
+[Jun 17 23:38:02] testcase_run.sh[4399]: runcheck: ./run testdata.in program.out sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -r /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s11-j11/testcase002/.. --nproc=64 --no-core --streamsize=4096 --user=domjudge-run --walltime=5:6 --cputime=5:6 --memsize=524288 --filesize=4096 --stderr=program.err --outmeta=program.meta -- /testcase002/execdir/program
+[Jun 17 23:38:02] testcase_run.sh[4399]: comparing output
+[Jun 17 23:38:02] testcase_run.sh[4399]: starting compare script '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run'
+[Jun 17 23:38:02] testcase_run.sh[4399]: runcheck: sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -u domjudge-run -m 2097152 -t 30 -c -f 65536 -s 65536 -M compare.meta -- /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run testdata.in testdata.out feedback/ float_tolerance 1E-6
+[Jun 17 23:38:02] testcase_run.sh[4399]: checking compare script exit-status: 43
+[Jun 17 23:38:02] testcase_run.sh[4399]: checking program run exit-status
+[Jun 17 23:38:02] testcase_run.sh[4399]: exiting with status '105'
+[Jun 17 23:38:02] judgedaemon[3012]: API request POST judging_runs
+[Jun 17 23:38:02] judgedaemon[3012]: Testcase 2 done, result: wrong-answer
+[Jun 17 23:38:02] judgedaemon[3012]: API request GET testcases
+[Jun 17 23:38:02] judgedaemon[3012]: Running testcase 3...
+[Jun 17 23:38:02] judgedaemon[3012]: API request GET testcase_files
+[Jun 17 23:38:02] judgedaemon[3012]: API request GET testcase_files
+[Jun 17 23:38:03] judgedaemon[3012]: Fetched new input,output testcase 3 for problem p2
+[Jun 17 23:38:03] judgedaemon[3012]: API request GET config
+[Jun 17 23:38:03] testcase_run.sh[4506]: starting '/home/quyenl/domjudge/judgehost/lib/judge/testcase_run.sh', PID = 4506
+[Jun 17 23:38:03] testcase_run.sh[4506]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.2.3.fc157fa74267ba846e8ddc9c0747ad53.in' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.2.3.d38340056cc41e311beae85f906d7f24.out' '5:6' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s11-j11/testcase003'
+[Jun 17 23:38:03] testcase_run.sh[4506]: optionals: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run' 'float_tolerance 1E-6'
+[Jun 17 23:38:03] testcase_run.sh[4506]: run_juryprog: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/runjury'
+[Jun 17 23:38:03] testcase_run.sh[4506]: setting up testing (chroot) environment
+[Jun 17 23:38:03] testcase_run.sh[4506]: creating /dev/null character-special device
+[Jun 17 23:38:03] testcase_run.sh[4506]: running program (USE_CHROOT = 1)
+[Jun 17 23:38:03] testcase_run.sh[4506]: runcheck: ./run testdata.in program.out sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -r /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s11-j11/testcase003/.. --nproc=64 --no-core --streamsize=4096 --user=domjudge-run --walltime=5:6 --cputime=5:6 --memsize=524288 --filesize=4096 --stderr=program.err --outmeta=program.meta -- /testcase003/execdir/program
+[Jun 17 23:38:03] testcase_run.sh[4506]: comparing output
+[Jun 17 23:38:03] testcase_run.sh[4506]: starting compare script '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run'
+[Jun 17 23:38:03] testcase_run.sh[4506]: runcheck: sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -u domjudge-run -m 2097152 -t 30 -c -f 65536 -s 65536 -M compare.meta -- /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run testdata.in testdata.out feedback/ float_tolerance 1E-6
+[Jun 17 23:38:03] testcase_run.sh[4506]: checking compare script exit-status: 43
+[Jun 17 23:38:03] testcase_run.sh[4506]: checking program run exit-status
+[Jun 17 23:38:03] testcase_run.sh[4506]: exiting with status '105'
+[Jun 17 23:38:03] judgedaemon[3012]: API request POST judging_runs
+[Jun 17 23:38:03] judgedaemon[3012]: Testcase 3 done, result: wrong-answer
+[Jun 17 23:38:03] judgedaemon[3012]: API request GET testcases
+[Jun 17 23:38:03] judgedaemon[3012]: executing chroot script: 'chroot-startstop.sh stop'
+[Jun 17 23:38:03] judgedaemon[3012]: Judging s11/j11 finished
+[Jun 17 23:38:03] judgedaemon[3012]: API request POST judgings
+[Jun 17 23:38:03] judgedaemon[3012]: No submissions in queue (for endpoint default), waiting...
+[Jun 17 23:40:34] judgedaemon[3012]: Judging submission s12 (endpoint default) (t4/p2/cpp), id j12...
+[Jun 17 23:40:34] judgedaemon[3012]: API request GET config
+[Jun 17 23:40:34] judgedaemon[3012]: API request GET config
+[Jun 17 23:40:34] judgedaemon[3012]: API request GET config
+[Jun 17 23:40:34] judgedaemon[3012]: API request GET config
+[Jun 17 23:40:34] judgedaemon[3012]: Working directory: /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s12-j12
+[Jun 17 23:40:34] judgedaemon[3012]: API request GET submission_files
+[Jun 17 23:40:34] compile.sh[4751]: starting '/home/quyenl/domjudge/judgehost/lib/judge/compile.sh', PID = 4751
+[Jun 17 23:40:34] compile.sh[4751]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/cpp/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s12-j12'
+[Jun 17 23:40:34] compile.sh[4751]: source file(s): example.hs
+[Jun 17 23:40:34] compile.sh[4751]: starting compile
+[Jun 17 23:40:34] compile.sh[4751]: checking compilation exit-status
+[Jun 17 23:40:34] compile.sh[4751]: exiting, code = '101'
+[Jun 17 23:40:34] judgedaemon[3012]: API request PUT judgings/12
+[Jun 17 23:40:34] judgedaemon[3012]: Judging s12/j12: compile error
+[Jun 17 23:40:34] judgedaemon[3012]: API request POST judgings
+[Jun 17 23:40:34] judgedaemon[3012]: No submissions in queue (for endpoint default), waiting...
+[Jun 17 23:41:04] judgedaemon[3012]: Judging submission s13 (endpoint default) (t4/p1/cpp), id j13...
+[Jun 17 23:41:04] judgedaemon[3012]: API request GET config
+[Jun 17 23:41:04] judgedaemon[3012]: API request GET config
+[Jun 17 23:41:04] judgedaemon[3012]: API request GET config
+[Jun 17 23:41:04] judgedaemon[3012]: API request GET config
+[Jun 17 23:41:04] judgedaemon[3012]: Working directory: /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s13-j13
+[Jun 17 23:41:04] judgedaemon[3012]: API request GET submission_files
+[Jun 17 23:41:04] compile.sh[4828]: starting '/home/quyenl/domjudge/judgehost/lib/judge/compile.sh', PID = 4828
+[Jun 17 23:41:04] compile.sh[4828]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/cpp/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s13-j13'
+[Jun 17 23:41:04] compile.sh[4828]: source file(s): hello.c
+[Jun 17 23:41:04] compile.sh[4828]: starting compile
+[Jun 17 23:41:05] compile.sh[4828]: checking compilation exit-status
+[Jun 17 23:41:05] compile.sh[4828]: Compilation successful
+[Jun 17 23:41:05] compile.sh[4828]: exiting, code = '0'
+[Jun 17 23:41:05] judgedaemon[3012]: API request PUT judgings/13
+[Jun 17 23:41:05] judgedaemon[3012]: executing chroot script: 'chroot-startstop.sh start'
+[Jun 17 23:41:05] judgedaemon[3012]: API request GET testcases
+[Jun 17 23:41:05] judgedaemon[3012]: Running testcase 1...
+[Jun 17 23:41:05] judgedaemon[3012]: API request GET config
+[Jun 17 23:41:05] testcase_run.sh[4903]: starting '/home/quyenl/domjudge/judgehost/lib/judge/testcase_run.sh', PID = 4903
+[Jun 17 23:41:05] testcase_run.sh[4903]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.b026324c6904b2a9cb4b88d6d61c81d1.in' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.59ca0efa9f5633cb0371bbc0355478d8.out' '5:6' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s13-j13/testcase001'
+[Jun 17 23:41:05] testcase_run.sh[4903]: optionals: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run' ''
+[Jun 17 23:41:05] testcase_run.sh[4903]: run_juryprog: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/runjury'
+[Jun 17 23:41:05] testcase_run.sh[4903]: setting up testing (chroot) environment
+[Jun 17 23:41:05] testcase_run.sh[4903]: creating /dev/null character-special device
+[Jun 17 23:41:05] testcase_run.sh[4903]: running program (USE_CHROOT = 1)
+[Jun 17 23:41:05] testcase_run.sh[4903]: runcheck: ./run testdata.in program.out sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -r /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s13-j13/testcase001/.. --nproc=64 --no-core --streamsize=4096 --user=domjudge-run --walltime=5:6 --cputime=5:6 --memsize=524288 --filesize=4096 --stderr=program.err --outmeta=program.meta -- /testcase001/execdir/program
+[Jun 17 23:41:05] testcase_run.sh[4903]: comparing output
+[Jun 17 23:41:05] testcase_run.sh[4903]: starting compare script '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run'
+[Jun 17 23:41:05] testcase_run.sh[4903]: runcheck: sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -u domjudge-run -m 2097152 -t 30 -c -f 65536 -s 65536 -M compare.meta -- /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run testdata.in testdata.out feedback/
+[Jun 17 23:41:05] testcase_run.sh[4903]: checking compare script exit-status: 42
+[Jun 17 23:41:05] testcase_run.sh[4903]: checking program run exit-status
+[Jun 17 23:41:05] testcase_run.sh[4903]: exiting with status '0'
+[Jun 17 23:41:05] judgedaemon[3012]: API request POST judging_runs
+[Jun 17 23:41:05] judgedaemon[3012]: Testcase 1 done, result: correct
+[Jun 17 23:41:05] judgedaemon[3012]: API request GET testcases
+[Jun 17 23:41:05] judgedaemon[3012]: executing chroot script: 'chroot-startstop.sh stop'
+[Jun 17 23:41:06] judgedaemon[3012]: Judging s13/j13 finished
+[Jun 17 23:41:06] judgedaemon[3012]: API request POST judgings
+[Jun 17 23:41:06] judgedaemon[3012]: No submissions in queue (for endpoint default), waiting...
+[Jun 18 00:01:15] judgedaemon[3012]: Signal 2 received
+[Jun 18 00:01:15] judgedaemon[3012]: Received signal, exiting.
+[Jun 19 06:25:07] judgedaemon[2763]: Judge started on quyenl [DOMjudge/5.1.3]
+[Jun 19 06:25:08] judgedaemon[2763]: Installing signal handlers
+[Jun 19 06:25:08] judgedaemon[2763]: Not using cgroups. Using cgroups is highly recommended. See the manual for details.
+[Jun 19 06:25:08] judgedaemon[2763]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Jun 19 06:25:08] judgedaemon[2763]: API request POST judgehosts
+[Jun 19 06:25:08] judgedaemon[2763]: API request POST judgings
+[Jun 19 06:25:08] judgedaemon[2763]: No submissions in queue (for endpoint default), waiting...
+[Jun 19 06:53:50] judgedaemon[2763]: Judging submission s14 (endpoint default) (t5/p1/cpp), id j14...
+[Jun 19 06:53:50] judgedaemon[2763]: API request GET config
+[Jun 19 06:53:50] judgedaemon[2763]: API request GET config
+[Jun 19 06:53:50] judgedaemon[2763]: API request GET config
+[Jun 19 06:53:50] judgedaemon[2763]: API request GET config
+[Jun 19 06:53:50] judgedaemon[2763]: Working directory: /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s14-j14
+[Jun 19 06:53:50] judgedaemon[2763]: API request GET submission_files
+[Jun 19 06:53:50] compile.sh[3855]: starting '/home/quyenl/domjudge/judgehost/lib/judge/compile.sh', PID = 3855
+[Jun 19 06:53:50] compile.sh[3855]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/cpp/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s14-j14'
+[Jun 19 06:53:50] compile.sh[3855]: source file(s): hello.c
+[Jun 19 06:53:50] compile.sh[3855]: starting compile
+[Jun 19 06:53:52] compile.sh[3855]: checking compilation exit-status
+[Jun 19 06:53:52] compile.sh[3855]: Compilation successful
+[Jun 19 06:53:52] compile.sh[3855]: exiting, code = '0'
+[Jun 19 06:53:52] judgedaemon[2763]: API request PUT judgings/14
+[Jun 19 06:53:52] judgedaemon[2763]: executing chroot script: 'chroot-startstop.sh start'
+[Jun 19 06:53:52] judgedaemon[2763]: API request GET testcases
+[Jun 19 06:53:52] judgedaemon[2763]: Running testcase 1...
+[Jun 19 06:53:52] judgedaemon[2763]: API request GET config
+[Jun 19 06:53:52] testcase_run.sh[3931]: starting '/home/quyenl/domjudge/judgehost/lib/judge/testcase_run.sh', PID = 3931
+[Jun 19 06:53:52] testcase_run.sh[3931]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.b026324c6904b2a9cb4b88d6d61c81d1.in' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.59ca0efa9f5633cb0371bbc0355478d8.out' '5:6' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s14-j14/testcase001'
+[Jun 19 06:53:52] testcase_run.sh[3931]: optionals: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run' ''
+[Jun 19 06:53:52] testcase_run.sh[3931]: run_juryprog: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/runjury'
+[Jun 19 06:53:52] testcase_run.sh[3931]: setting up testing (chroot) environment
+[Jun 19 06:53:52] testcase_run.sh[3931]: creating /dev/null character-special device
+[Jun 19 06:53:52] testcase_run.sh[3931]: running program (USE_CHROOT = 1)
+[Jun 19 06:53:52] testcase_run.sh[3931]: runcheck: ./run testdata.in program.out sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -r /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s14-j14/testcase001/.. --nproc=64 --no-core --streamsize=4096 --user=domjudge-run --walltime=5:6 --cputime=5:6 --memsize=524288 --filesize=4096 --stderr=program.err --outmeta=program.meta -- /testcase001/execdir/program
+[Jun 19 06:53:52] testcase_run.sh[3931]: comparing output
+[Jun 19 06:53:52] testcase_run.sh[3931]: starting compare script '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run'
+[Jun 19 06:53:52] testcase_run.sh[3931]: runcheck: sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -u domjudge-run -m 2097152 -t 30 -c -f 65536 -s 65536 -M compare.meta -- /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run testdata.in testdata.out feedback/
+[Jun 19 06:53:52] testcase_run.sh[3931]: checking compare script exit-status: 42
+[Jun 19 06:53:52] testcase_run.sh[3931]: checking program run exit-status
+[Jun 19 06:53:52] testcase_run.sh[3931]: exiting with status '0'
+[Jun 19 06:53:52] judgedaemon[2763]: API request POST judging_runs
+[Jun 19 06:53:53] judgedaemon[2763]: Testcase 1 done, result: correct
+[Jun 19 06:53:53] judgedaemon[2763]: API request GET testcases
+[Jun 19 06:53:53] judgedaemon[2763]: executing chroot script: 'chroot-startstop.sh stop'
+[Jun 19 06:53:53] judgedaemon[2763]: Judging s14/j14 finished
+[Jun 19 06:53:53] judgedaemon[2763]: API request POST judgings
+[Jun 19 06:53:53] judgedaemon[2763]: No submissions in queue (for endpoint default), waiting...
+[Jun 19 07:04:23] judgedaemon[2763]: Signal 2 received
+[Jun 19 07:04:23] judgedaemon[2763]: Received signal, exiting.
+[Jun 19 07:25:32] judgedaemon[2988]: Judge started on quyenl [DOMjudge/5.1.3]
+[Jun 19 07:25:32] judgedaemon[2988]: Installing signal handlers
+[Jun 19 07:25:32] judgedaemon[2988]: Not using cgroups. Using cgroups is highly recommended. See the manual for details.
+[Jun 19 07:25:32] judgedaemon[2988]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Jun 19 07:25:33] judgedaemon[2988]: API request POST judgehosts
+[Jun 19 07:25:33] judgedaemon[2988]: API request POST judgings
+[Jun 19 07:25:33] judgedaemon[2988]: No submissions in queue (for endpoint default), waiting...
+[Jun 19 07:35:14] judgedaemon[2988]: Signal 1 received
+[Jun 19 07:35:14] judgedaemon[2988]: Received signal, exiting.
+[Jun 19 07:56:39] judgedaemon[2992]: Judge started on quyenl [DOMjudge/5.1.3]
+[Jun 19 07:56:39] judgedaemon[2992]: Installing signal handlers
+[Jun 19 07:56:39] judgedaemon[2992]: Not using cgroups. Using cgroups is highly recommended. See the manual for details.
+[Jun 19 07:56:39] judgedaemon[2992]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Jun 19 07:56:39] judgedaemon[2992]: API request POST judgehosts
+[Jun 19 07:56:39] judgedaemon[2992]: API request POST judgings
+[Jun 19 07:56:39] judgedaemon[2992]: No submissions in queue (for endpoint default), waiting...
+[Jun 19 08:20:33] judgedaemon[2992]: Signal 1 received
+[Jun 19 08:20:33] judgedaemon[2992]: Received signal, exiting.
+[Jun 19 08:38:46] judgedaemon[3050]: Judge started on quyenl [DOMjudge/5.1.3]
+[Jun 19 08:38:46] judgedaemon[3050]: Installing signal handlers
+[Jun 19 08:38:46] judgedaemon[3050]: Not using cgroups. Using cgroups is highly recommended. See the manual for details.
+[Jun 19 08:38:46] judgedaemon[3050]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Jun 19 08:38:46] judgedaemon[3050]: API request POST judgehosts
+[Jun 19 08:38:46] judgedaemon[3050]: API request POST judgings
+[Jun 19 08:38:46] judgedaemon[3050]: No submissions in queue (for endpoint default), waiting...
+[Jun 19 08:42:27] judgedaemon[3050]: Signal 2 received
+[Jun 19 08:42:27] judgedaemon[3050]: Received signal, exiting.
+[Jun 19 08:44:32] judgedaemon[2627]: Judge started on quyenl [DOMjudge/5.1.3]
+[Jun 19 08:44:32] judgedaemon[2627]: Installing signal handlers
+[Jun 19 08:44:32] judgedaemon[2627]: Not using cgroups. Using cgroups is highly recommended. See the manual for details.
+[Jun 19 08:44:32] judgedaemon[2627]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Jun 19 08:44:32] judgedaemon[2627]: API request POST judgehosts
+[Jun 19 08:44:32] judgedaemon[2627]: API request POST judgings
+[Jun 19 08:44:32] judgedaemon[2627]: No submissions in queue (for endpoint default), waiting...
+[Jun 19 09:03:49] judgedaemon[2627]: Signal 2 received
+[Jun 19 09:03:49] judgedaemon[2627]: Received signal, exiting.
+[Jun 19 09:50:08] judgedaemon[3515]: Judge started on quyenl [DOMjudge/5.1.3]
+[Jun 19 09:50:08] judgedaemon[3515]: Installing signal handlers
+[Jun 19 09:50:08] judgedaemon[3515]: Not using cgroups. Using cgroups is highly recommended. See the manual for details.
+[Jun 19 09:50:08] judgedaemon[3515]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Jun 19 09:50:08] judgedaemon[3515]: API request POST judgehosts
+[Jun 19 09:50:08] judgedaemon[3515]: API request POST judgings
+[Jun 19 09:50:08] judgedaemon[3515]: No submissions in queue (for endpoint default), waiting...
+[Jun 19 09:58:56] judgedaemon[3515]: Judging submission s15 (endpoint default) (t5/p3/cpp), id j15...
+[Jun 19 09:58:56] judgedaemon[3515]: API request GET config
+[Jun 19 09:58:56] judgedaemon[3515]: API request GET config
+[Jun 19 09:58:56] judgedaemon[3515]: API request GET config
+[Jun 19 09:58:56] judgedaemon[3515]: API request GET config
+[Jun 19 09:58:56] judgedaemon[3515]: Working directory: /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s15-j15
+[Jun 19 09:58:56] judgedaemon[3515]: API request GET submission_files
+[Jun 19 09:58:56] compile.sh[3707]: starting '/home/quyenl/domjudge/judgehost/lib/judge/compile.sh', PID = 3707
+[Jun 19 09:58:56] compile.sh[3707]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/cpp/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s15-j15'
+[Jun 19 09:58:56] compile.sh[3707]: source file(s): example.c
+[Jun 19 09:58:56] compile.sh[3707]: starting compile
+[Jun 19 09:58:57] compile.sh[3707]: checking compilation exit-status
+[Jun 19 09:58:57] compile.sh[3707]: Compilation successful
+[Jun 19 09:58:57] compile.sh[3707]: exiting, code = '0'
+[Jun 19 09:58:57] judgedaemon[3515]: API request PUT judgings/15
+[Jun 19 09:58:57] judgedaemon[3515]: executing chroot script: 'chroot-startstop.sh start'
+[Jun 19 09:58:58] judgedaemon[3515]: API request GET testcases
+[Jun 19 09:58:58] judgedaemon[3515]: Running testcase 1...
+[Jun 19 09:58:58] judgedaemon[3515]: API request GET testcase_files
+[Jun 19 09:58:58] judgedaemon[3515]: API request GET testcase_files
+[Jun 19 09:58:58] judgedaemon[3515]: Fetched new input,output testcase 1 for problem p3
+[Jun 19 09:58:58] judgedaemon[3515]: API request GET config
+[Jun 19 09:58:58] judgedaemon[3515]: Fetching new executable 'boolfind_cmp'
+[Jun 19 09:58:58] judgedaemon[3515]: API request GET executable
+[Jun 19 09:58:58] judgedaemon[3515]: Unzipping
+[Jun 19 09:58:58] judgedaemon[3515]: Compiling
+[Jun 19 09:59:00] judgedaemon[3515]: Fetching new executable 'boolfind_run'
+[Jun 19 09:59:00] judgedaemon[3515]: API request GET executable
+[Jun 19 09:59:00] judgedaemon[3515]: Unzipping
+[Jun 19 09:59:00] judgedaemon[3515]: Compiling
+[Jun 19 09:59:01] testcase_run.sh[3813]: starting '/home/quyenl/domjudge/judgehost/lib/judge/testcase_run.sh', PID = 3813
+[Jun 19 09:59:01] testcase_run.sh[3813]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.3.1.90864a8759427d63b40f1f5f75e32308.in' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.3.1.6267776644f5bd2bf0edccf5a210e087.out' '5:6' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s15-j15/testcase001'
+[Jun 19 09:59:01] testcase_run.sh[3813]: optionals: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/boolfind_run/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/boolfind_cmp/run' ''
+[Jun 19 09:59:01] testcase_run.sh[3813]: run_juryprog: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/boolfind_run/runjury'
+[Jun 19 09:59:01] testcase_run.sh[3813]: setting up testing (chroot) environment
+[Jun 19 09:59:01] testcase_run.sh[3813]: creating /dev/null character-special device
+[Jun 19 09:59:01] testcase_run.sh[3813]: running program (USE_CHROOT = 1)
+[Jun 19 09:59:01] testcase_run.sh[3813]: runcheck: ./run testdata.in program.out sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -r /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s15-j15/testcase001/.. --nproc=64 --no-core --streamsize=4096 --user=domjudge-run --walltime=5:6 --cputime=5:6 --memsize=524288 --filesize=4096 --stderr=program.err --outmeta=program.meta -- /testcase001/execdir/program
+[Jun 19 09:59:07] testcase_run.sh[3813]: comparing output
+[Jun 19 09:59:07] testcase_run.sh[3813]: starting compare script '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/boolfind_cmp/run'
+[Jun 19 09:59:07] testcase_run.sh[3813]: runcheck: sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -u domjudge-run -m 2097152 -t 30 -c -f 65536 -s 65536 -M compare.meta -- /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/boolfind_cmp/run testdata.in testdata.out feedback/
+[Jun 19 09:59:07] testcase_run.sh[3813]: checking compare script exit-status: 43
+[Jun 19 09:59:07] testcase_run.sh[3813]: checking program run exit-status
+[Jun 19 09:59:07] testcase_run.sh[3813]: exiting with status '102'
+[Jun 19 09:59:07] judgedaemon[3515]: API request POST judging_runs
+[Jun 19 09:59:07] judgedaemon[3515]: Testcase 1 done, result: timelimit
+[Jun 19 09:59:07] judgedaemon[3515]: API request GET testcases
+[Jun 19 09:59:07] judgedaemon[3515]: executing chroot script: 'chroot-startstop.sh stop'
+[Jun 19 09:59:08] judgedaemon[3515]: Judging s15/j15 finished
+[Jun 19 09:59:08] judgedaemon[3515]: API request POST judgings
+[Jun 19 09:59:08] judgedaemon[3515]: No submissions in queue (for endpoint default), waiting...
+[Jun 19 11:00:19] judgedaemon[3515]: Signal 2 received
+[Jun 19 11:00:19] judgedaemon[3515]: Received signal, exiting.
+[Jun 19 18:25:06] judgedaemon[3029]: Judge started on quyenl [DOMjudge/5.1.3]
+[Jun 19 18:25:06] judgedaemon[3029]: Installing signal handlers
+[Jun 19 18:25:06] judgedaemon[3029]: Not using cgroups. Using cgroups is highly recommended. See the manual for details.
+[Jun 19 18:25:06] judgedaemon[3029]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Jun 19 18:25:06] judgedaemon[3029]: API request POST judgehosts
+[Jun 19 18:25:07] judgedaemon[3029]: API request POST judgings
+[Jun 19 18:25:07] judgedaemon[3029]: No submissions in queue (for endpoint default), waiting...
+[Jun 19 18:27:43] judgedaemon[3029]: Judging submission s16 (endpoint default) (t5/p1/cpp), id j16...
+[Jun 19 18:27:43] judgedaemon[3029]: API request GET config
+[Jun 19 18:27:43] judgedaemon[3029]: API request GET config
+[Jun 19 18:27:43] judgedaemon[3029]: API request GET config
+[Jun 19 18:27:43] judgedaemon[3029]: API request GET config
+[Jun 19 18:27:43] judgedaemon[3029]: Working directory: /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s16-j16
+[Jun 19 18:27:43] judgedaemon[3029]: API request GET submission_files
+[Jun 19 18:27:43] compile.sh[3128]: starting '/home/quyenl/domjudge/judgehost/lib/judge/compile.sh', PID = 3128
+[Jun 19 18:27:43] compile.sh[3128]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/cpp/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s16-j16'
+[Jun 19 18:27:43] compile.sh[3128]: source file(s): hello.c
+[Jun 19 18:27:43] compile.sh[3128]: starting compile
+[Jun 19 18:27:45] compile.sh[3128]: checking compilation exit-status
+[Jun 19 18:27:45] compile.sh[3128]: Compilation successful
+[Jun 19 18:27:45] compile.sh[3128]: exiting, code = '0'
+[Jun 19 18:27:45] judgedaemon[3029]: API request PUT judgings/16
+[Jun 19 18:27:45] judgedaemon[3029]: executing chroot script: 'chroot-startstop.sh start'
+[Jun 19 18:27:45] judgedaemon[3029]: API request GET testcases
+[Jun 19 18:27:45] judgedaemon[3029]: Running testcase 1...
+[Jun 19 18:27:45] judgedaemon[3029]: API request GET config
+[Jun 19 18:27:45] testcase_run.sh[3203]: starting '/home/quyenl/domjudge/judgehost/lib/judge/testcase_run.sh', PID = 3203
+[Jun 19 18:27:45] testcase_run.sh[3203]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.b026324c6904b2a9cb4b88d6d61c81d1.in' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.59ca0efa9f5633cb0371bbc0355478d8.out' '5:6' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s16-j16/testcase001'
+[Jun 19 18:27:45] testcase_run.sh[3203]: optionals: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run' ''
+[Jun 19 18:27:45] testcase_run.sh[3203]: run_juryprog: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/runjury'
+[Jun 19 18:27:45] testcase_run.sh[3203]: setting up testing (chroot) environment
+[Jun 19 18:27:46] testcase_run.sh[3203]: creating /dev/null character-special device
+[Jun 19 18:27:46] testcase_run.sh[3203]: running program (USE_CHROOT = 1)
+[Jun 19 18:27:46] testcase_run.sh[3203]: runcheck: ./run testdata.in program.out sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -r /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c6-s16-j16/testcase001/.. --nproc=64 --no-core --streamsize=4096 --user=domjudge-run --walltime=5:6 --cputime=5:6 --memsize=524288 --filesize=4096 --stderr=program.err --outmeta=program.meta -- /testcase001/execdir/program
+[Jun 19 18:27:46] testcase_run.sh[3203]: comparing output
+[Jun 19 18:27:46] testcase_run.sh[3203]: starting compare script '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run'
+[Jun 19 18:27:46] testcase_run.sh[3203]: runcheck: sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -u domjudge-run -m 2097152 -t 30 -c -f 65536 -s 65536 -M compare.meta -- /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run testdata.in testdata.out feedback/
+[Jun 19 18:27:46] testcase_run.sh[3203]: checking compare script exit-status: 42
+[Jun 19 18:27:46] testcase_run.sh[3203]: checking program run exit-status
+[Jun 19 18:27:46] testcase_run.sh[3203]: exiting with status '0'
+[Jun 19 18:27:46] judgedaemon[3029]: API request POST judging_runs
+[Jun 19 18:27:46] judgedaemon[3029]: Testcase 1 done, result: correct
+[Jun 19 18:27:46] judgedaemon[3029]: API request GET testcases
+[Jun 19 18:27:46] judgedaemon[3029]: executing chroot script: 'chroot-startstop.sh stop'
+[Jun 19 18:27:46] judgedaemon[3029]: Judging s16/j16 finished
+[Jun 19 18:27:46] judgedaemon[3029]: API request POST judgings
+[Jun 19 18:27:46] judgedaemon[3029]: No submissions in queue (for endpoint default), waiting...
+[Jun 19 18:58:06] judgedaemon[3029]: Signal 2 received
+[Jun 19 18:58:06] judgedaemon[3029]: Received signal, exiting.
+[Jun 25 17:11:01] judgedaemon[4651]: Judge started on quyenl [DOMjudge/5.1.3]
+[Jun 25 17:11:01] judgedaemon[4651]: Installing signal handlers
+[Jun 25 17:11:01] judgedaemon[4651]: Not using cgroups. Using cgroups is highly recommended. See the manual for details.
+[Jun 25 17:11:01] judgedaemon[4651]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Jun 25 17:11:01] judgedaemon[4651]: API request POST judgehosts
+[Jun 25 17:11:01] judgedaemon[4651]: API request POST judgings
+[Jun 25 17:11:01] judgedaemon[4651]: No submissions in queue (for endpoint default), waiting...
+[Jun 25 17:11:47] judgedaemon[4651]: Judging submission s17 (endpoint default) (t5/p1/cpp), id j17...
+[Jun 25 17:11:47] judgedaemon[4651]: API request GET config
+[Jun 25 17:11:47] judgedaemon[4651]: API request GET config
+[Jun 25 17:11:47] judgedaemon[4651]: API request GET config
+[Jun 25 17:11:47] judgedaemon[4651]: API request GET config
+[Jun 25 17:11:47] judgedaemon[4651]: Working directory: /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c7-s17-j17
+[Jun 25 17:11:47] judgedaemon[4651]: API request GET submission_files
+[Jun 25 17:11:47] compile.sh[4688]: starting '/home/quyenl/domjudge/judgehost/lib/judge/compile.sh', PID = 4688
+[Jun 25 17:11:47] compile.sh[4688]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/cpp/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c7-s17-j17'
+[Jun 25 17:11:47] compile.sh[4688]: source file(s): hello.c
+[Jun 25 17:11:47] compile.sh[4688]: starting compile
+[Jun 25 17:11:49] compile.sh[4688]: checking compilation exit-status
+[Jun 25 17:11:49] compile.sh[4688]: Compilation successful
+[Jun 25 17:11:49] compile.sh[4688]: exiting, code = '0'
+[Jun 25 17:11:49] judgedaemon[4651]: API request PUT judgings/17
+[Jun 25 17:11:49] judgedaemon[4651]: executing chroot script: 'chroot-startstop.sh start'
+[Jun 25 17:11:49] judgedaemon[4651]: API request GET testcases
+[Jun 25 17:11:49] judgedaemon[4651]: Running testcase 1...
+[Jun 25 17:11:49] judgedaemon[4651]: API request GET config
+[Jun 25 17:11:49] testcase_run.sh[4763]: starting '/home/quyenl/domjudge/judgehost/lib/judge/testcase_run.sh', PID = 4763
+[Jun 25 17:11:49] testcase_run.sh[4763]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.b026324c6904b2a9cb4b88d6d61c81d1.in' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/testcase/testcase.1.1.59ca0efa9f5633cb0371bbc0355478d8.out' '5:6' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c7-s17-j17/testcase001'
+[Jun 25 17:11:49] testcase_run.sh[4763]: optionals: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run' ''
+[Jun 25 17:11:49] testcase_run.sh[4763]: run_juryprog: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/run/runjury'
+[Jun 25 17:11:49] testcase_run.sh[4763]: setting up testing (chroot) environment
+[Jun 25 17:11:49] testcase_run.sh[4763]: creating /dev/null character-special device
+[Jun 25 17:11:49] testcase_run.sh[4763]: running program (USE_CHROOT = 1)
+[Jun 25 17:11:49] testcase_run.sh[4763]: runcheck: ./run testdata.in program.out sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -r /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c7-s17-j17/testcase001/.. --nproc=64 --no-core --streamsize=4096 --user=domjudge-run --walltime=5:6 --cputime=5:6 --memsize=524288 --filesize=4096 --stderr=program.err --outmeta=program.meta -- /testcase001/execdir/program
+[Jun 25 17:11:49] testcase_run.sh[4763]: comparing output
+[Jun 25 17:11:49] testcase_run.sh[4763]: starting compare script '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run'
+[Jun 25 17:11:49] testcase_run.sh[4763]: runcheck: sudo -n /home/quyenl/domjudge/judgehost/bin/runguard -u domjudge-run -m 2097152 -t 30 -c -f 65536 -s 65536 -M compare.meta -- /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/compare/run testdata.in testdata.out feedback/
+[Jun 25 17:11:49] testcase_run.sh[4763]: checking compare script exit-status: 42
+[Jun 25 17:11:49] testcase_run.sh[4763]: checking program run exit-status
+[Jun 25 17:11:49] testcase_run.sh[4763]: exiting with status '0'
+[Jun 25 17:11:49] judgedaemon[4651]: API request POST judging_runs
+[Jun 25 17:11:49] judgedaemon[4651]: Testcase 1 done, result: correct
+[Jun 25 17:11:49] judgedaemon[4651]: API request GET testcases
+[Jun 25 17:11:49] judgedaemon[4651]: executing chroot script: 'chroot-startstop.sh stop'
+[Jun 25 17:11:50] judgedaemon[4651]: Judging s17/j17 finished
+[Jun 25 17:11:50] judgedaemon[4651]: API request POST judgings
+[Jun 25 17:11:50] judgedaemon[4651]: No submissions in queue (for endpoint default), waiting...
+[Jun 25 17:12:56] judgedaemon[4651]: Judging submission s18 (endpoint default) (t5/p1/java), id j18...
+[Jun 25 17:12:56] judgedaemon[4651]: API request GET config
+[Jun 25 17:12:56] judgedaemon[4651]: API request GET config
+[Jun 25 17:12:56] judgedaemon[4651]: API request GET config
+[Jun 25 17:12:56] judgedaemon[4651]: API request GET config
+[Jun 25 17:12:56] judgedaemon[4651]: Working directory: /home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c7-s18-j18
+[Jun 25 17:12:56] judgedaemon[4651]: API request GET submission_files
+[Jun 25 17:12:56] judgedaemon[4651]: Fetching new executable 'java_javac_detect'
+[Jun 25 17:12:56] judgedaemon[4651]: API request GET executable
+[Jun 25 17:12:56] judgedaemon[4651]: Unzipping
+[Jun 25 17:12:56] judgedaemon[4651]: Compiling
+[Jun 25 17:13:04] compile.sh[5251]: starting '/home/quyenl/domjudge/judgehost/lib/judge/compile.sh', PID = 5251
+[Jun 25 17:13:04] compile.sh[5251]: arguments: '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/executable/java_javac_detect/run' '/home/quyenl/domjudge/judgehost/judgings/quyenl/endpoint-default/c7-s18-j18'
+[Jun 25 17:13:04] compile.sh[5251]: source file(s): example.c
+[Jun 25 17:13:04] compile.sh[5251]: starting compile
+[Jun 25 17:13:06] compile.sh[5251]: checking compilation exit-status
+[Jun 25 17:13:06] compile.sh[5251]: exiting, code = '101'
+[Jun 25 17:13:06] judgedaemon[4651]: API request PUT judgings/18
+[Jun 25 17:13:06] judgedaemon[4651]: Judging s18/j18: compile error
+[Jun 25 17:13:06] judgedaemon[4651]: API request POST judgings
+[Jun 25 17:13:06] judgedaemon[4651]: No submissions in queue (for endpoint default), waiting...
+[Jun 25 17:26:52] judgedaemon[4651]: Signal 2 received
+[Jun 25 17:26:52] judgedaemon[4651]: Received signal, exiting.

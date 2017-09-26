@@ -1,0 +1,4 @@
+hello.c: In function 'main':
+hello.c:6:7: warning: ignoring return value of 'scanf', declared with attribute warn_unused_result [-Wunused-result]
+  scanf("%d\n", &i);
+       ^

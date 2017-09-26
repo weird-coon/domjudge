@@ -1,0 +1,7 @@
+example.c: In function 'int main()':
+example.c:8:24: warning: ignoring return value of 'int scanf(const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+  scanf("%d\n", &ntests);
+                        ^
+example.c:11:22: warning: ignoring return value of 'int scanf(const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+   scanf("%s\n", name);
+                      ^

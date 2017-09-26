@@ -1,0 +1,21 @@
+# Generated from 'sudoers-domjudge.in' on Sun Jun 11 09:03:48 ICT 2017.
+
+# Example sudoers configuration for DOMjudge judgehosts.
+# Check the file paths (especially the chroot prefix),
+# give it file mode 0440 and place this file into /etc/sudoers.d/
+# (most recent sudo versions; otherwise use an #include statement
+# in or add its content to the end of /etc/sudoers)
+
+quyenl ALL=(root) NOPASSWD: /home/quyenl/domjudge/judgehost/bin/runguard *
+quyenl ALL=(root) NOPASSWD: /bin/cp -pR /dev/null ../dev/null
+
+# The following is needed if you set USE_CHROOT=1 (recommended).
+# The chroot path below must match the path in chroot-startstop.sh.
+quyenl ALL=(root) NOPASSWD: /bin/mount -n --bind /proc proc
+quyenl ALL=(root) NOPASSWD: /bin/umount /*/proc
+quyenl ALL=(root) NOPASSWD: /bin/mount --bind /chroot/domjudge/*
+quyenl ALL=(root) NOPASSWD: /bin/mount -o remount\,ro\,bind /home/quyenl/domjudge/judgehost/judgings/*
+quyenl ALL=(root) NOPASSWD: /bin/umount /home/quyenl/domjudge/judgehost/judgings/*
+quyenl ALL=(root) NOPASSWD: /bin/cp -pR /dev/random dev
+quyenl ALL=(root) NOPASSWD: /bin/cp -pR /dev/urandom dev
+

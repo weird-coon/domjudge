@@ -1,0 +1,4 @@
+hello.c: In function 'int main()':
+hello.c:6:19: warning: ignoring return value of 'int scanf(const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+  scanf("%d\n", &i);
+                   ^

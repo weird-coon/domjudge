@@ -1,0 +1,5 @@
+/home/quyenl/domjudge/judgehost/bin/runguard: warning: timelimit exceeded (hard wall time): aborting command
+/home/quyenl/domjudge/judgehost/bin/runguard: warning: command terminated with signal 15
+/home/quyenl/domjudge/judgehost/bin/runguard: warning: timelimit exceeded (soft wall time)
+jury program exited successfully
+[Jun 19 09:59:07] ../bin/runpipe[3858]: warning: command #2 exited with exitcode 143

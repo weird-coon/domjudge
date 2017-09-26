@@ -1,0 +1,10 @@
+Compiling failed with exitcode 1, compiler output:
+sudo: /etc/sudoers.d/sudoers-domjudge is owned by uid 1000, should be 0
+hello.c: In function 'main':
+hello.c:6:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'scanf'
+  scanf("%d\n", &i);
+  ^
+hello.c:6:17: error: 'i' undeclared (first use in this function)
+  scanf("%d\n", &i);
+                 ^
+hello.c:6:17: note: each undeclared identifier is reported only once for each function it appears in

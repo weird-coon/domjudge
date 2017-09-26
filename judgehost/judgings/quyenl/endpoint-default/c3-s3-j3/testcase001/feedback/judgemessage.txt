@@ -1,0 +1,3 @@
+
+---------- output validator stdout/stderr messages ----------
+sudo: /etc/sudoers.d/sudoers-domjudge is owned by uid 1000, should be 0

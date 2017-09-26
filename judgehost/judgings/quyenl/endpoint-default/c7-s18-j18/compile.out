@@ -1,0 +1,3 @@
+Compiling failed with exitcode 1, compiler output:
+error: Class names, 'example.c', are only accepted if annotation processing is explicitly requested
+1 error
